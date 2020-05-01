@@ -257,7 +257,6 @@ flags.DEFINE_string('tfjs_model_path', '', '')
 
 def main(argv):
     del argv  # Unused.
-    tf.disable_eager_execution()
     weight = np.load(FLAGS.chainer_model_path)
 
     if FLAGS.keras_model_path == "":
